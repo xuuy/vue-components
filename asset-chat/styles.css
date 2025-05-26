@@ -1,0 +1,15 @@
+body {
+    margin: 0;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    color: #eee;
+    line-height: 1.6;
+}
+
+
+canvas {
+    width: 100%;
+    height: 100%;
+    background-color: #000; /* 保留黑色背景 */
+}
