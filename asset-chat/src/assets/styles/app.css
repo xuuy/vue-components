@@ -1,0 +1,36 @@
+.app-container {
+  font-family: Arial, sans-serif;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.nav-header {
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #eaeaea;
+}
+
+.nav-link {
+  display: inline-block;
+  margin-right: 15px;
+  padding: 8px 15px;
+  text-decoration: none;
+  color: #333;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.nav-link:hover {
+  background-color: #f0f0f0;
+}
+
+.router-link-active {
+  font-weight: bold;
+  color: #1867c0;
+  background-color: #e8f0fe;
+}
+
+.content {
+  padding: 20px 0;
+}

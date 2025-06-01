@@ -17,15 +17,15 @@ export default defineComponent({
         
         // Set up resize observer
         resizeObserver = new ResizeObserver(() => {
-          resizeCanvas()
+          // resizeCanvas()
           renderNewChart() // Call the new render function
         })
         if (canvasRef.value.parentElement) {
-          resizeObserver.observe(canvasRef.value.parentElement as Element)
+          resizeObserver.observe(canvasRef.value as Element)
         }
         
-        resizeCanvas()
-        renderNewChart() // Call the new render function
+        // resizeCanvas()
+        // renderNewChart() // Call the new render function
       }
     })
 

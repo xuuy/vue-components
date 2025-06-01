@@ -1,19 +1,20 @@
 import { defineComponent } from 'vue'
-import AssetChart from './components/AssetChart'
-import ControlPanel from './components/ControlPanel'
+import { RouterView, RouterLink } from 'vue-router'
 
 export default defineComponent({
   name: 'App',
   setup() {
     return () => (
-      <div class="max-w-1200px mx-auto flex flex-col md:flex-row gap-5">
-        <div class="flex-1 h-400px mb-5 md:mb-0">
-          <AssetChart />
-        </div>
-        
-        <div class="flex-1 md:max-w-400px bg-dark-700 border border-dark-400 rounded-md p-4">
-          <ControlPanel />
-        </div>
+      <div class="app-container">
+        <header class="nav-header">
+          <nav>
+            <RouterLink to="/seal" class="nav-link">印章演示</RouterLink>
+            <RouterLink to="/asset-chat" class="nav-link">资产聊天演示</RouterLink>
+          </nav>
+        </header>
+        <main class="content">
+          <RouterView />
+        </main>
       </div>
     )
   }
